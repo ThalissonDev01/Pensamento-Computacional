@@ -1,3 +1,8 @@
+# Integrantes do curso
+- Davi Pereira dos Santos: https://github.com/Saigaton 
+- Eduardo Roberto Lucena: https://github.com/Bigodudys
+- Thalisson Costa Mesquita: https://github.com/ThalissonDev01
+
 # Projeto – Pensamento Computacional para Sistemas de Larga Escala
 
 ## Descrição
