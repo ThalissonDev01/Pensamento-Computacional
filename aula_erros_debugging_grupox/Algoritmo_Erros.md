@@ -1,0 +1,59 @@
+# RELATÓRIO DE BUGS - ATLAS FINTECH
+
+## 1. OBJETIVO
+Este relatório apresenta os bugs identificados no protótipo UI do Atlas Fintech. A análise foi feita de forma estática, inspecionando o código-fonte em busca de erros de sintaxe, lógica, execução e inconsistência de dados.
+
+---
+
+## 2. RESUMO
+- Total de bugs: 21
+- Severidade Alta: 4
+- Severidade Média: 11
+- Severidade Baixa: 6
+
+### Por categoria:
+- CSS: 8 bugs
+- JavaScript: 4 bugs
+- HTML: 6 bugs
+- Dados: 3 bugs
+
+---
+
+## 3. LISTAGEM DE BUGS
+
+### CSS
+- #05 - Linha 265 - ALTA: height: calc(100vh - 152px) é valor fixo. O chat fica cortado ou com espaço vazio dependendo da tela.
+- #01 - Linha 127 - Média: A animação fadein está em .screen (display:none), mas só funciona em .screen.active.
+- #06 - Geral - Média: ::-webkit-scrollbar não funciona no Firefox, exibindo estilo padrão do sistema.
+- #07 - Geral - Média: Nenhuma media query implementada. Em telas menores que 768px o layout quebra.
+- #02 - Linha 177 - Baixa: Classe .mb16 declarada mas nunca utilizada no HTML (código morto).
+- #03 - Linha 136 - Baixa: font-size: 9.5px é subpixel e causa inconsistência entre navegadores.
+- #04 - Linha 155 - Baixa: Classe .tr conflita semanticamente com o elemento HTML nativo de tabela.
+- #08 - Linha 127 - Baixa: A classe .screen não possui transição de saída, tornando a navegação abrupta.
+
+### JavaScript
+- #09 - Linha 821 - ALTA: A regex em sendChip() falha com emojis compostos, incorrendo em erro no dicionário.
+- #10 - Linha 836 - ALTA: Busca no dicionário REPLIES sem normalizar acentos. A chave "mes" falha ao buscar "mês".
+- #11 - Linha 802 - Média: setPeriod() altera o visual das abas mas não filtra os dados reais dos KPIs.
+- #12 - Linha 807 - Média: Abas Alertas, Calendário e Auditoria não possuem conteúdo associado no HTML.
+
+### HTML
+- #16 - Geral - ALTA: Botões e ícones sem aria-label. Violação de acessibilidade WCAG 4.1.2 para leitores de tela.
+- #13 - Linhas 372-377 - Média: Campos de login fora de um elemento form, impedindo o submit com a tecla Enter.
+- #14 - Linhas 738-741 - Média: Elementos label sem o atributo "for" vinculado ao ID do input correspondente.
+- #15 - Linhas 316 e 425 - Média: Dois elementos h1 coexistem na mesma página, invalidando a hierarquia semântica.
+- #17 - Linha 319 - Baixa: Elemento decorativo sem aria-hidden="true", adicionando ruído para tecnologias assistivas.
+- #18 - Linhas 367 e 377 - Baixa: Botões sem atributo type explícito, sendo tratados como submit pelo navegador.
+
+### Dados e Consistência
+- #19 - Dashboard vs Contas a Pagar - Média: Dashboard exibe R$ 3.250 em vencidas, mas a tabela lista apenas R$ 2.400.
+- #20 - Dashboard vs Contas a Receber - Média: Hero mostra R$ 46.800 de entrada, mas o total detalhado é R$ 34.500.
+- #21 - Assistente IA - Baixa: Respostas mencionam datas que já passaram em relação ao contexto de janeiro de 2026.
+
+---
+
+## 4. ORDEM DE CORREÇÃO SUGERIDA
+1. Bugs de Severidade Alta (#05, #09, #10, #16).
+2. Responsividade e Estrutura de Formulários (#07, #13, #14).
+3. Semântica e Filtros (#15, #11, #12).
+4. Sincronização de Dados e Revisão de Estilo (#19, #20, #21, #02).
