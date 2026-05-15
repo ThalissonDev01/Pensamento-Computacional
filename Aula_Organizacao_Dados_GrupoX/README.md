@@ -7,13 +7,9 @@
 
 ## Integrantes do Grupo
 
-| Nome | RA |
-|------|----|
-| Integrante 1 | xxxxxxx |
-| Integrante 2 | xxxxxxx |
-| Integrante 3 | xxxxxxx |
-| Integrante 4 | xxxxxxx |
-
+Davi Pereira dos Santos: https://github.com/Saigaton
+Eduardo Roberto Lucena: https://github.com/Bigodudys
+Thalisson Costa Mesquita: https://github.com/ThalissonDev01
 ---
 
 ## Sobre a atividade
