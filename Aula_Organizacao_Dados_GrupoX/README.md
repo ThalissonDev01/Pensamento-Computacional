@@ -7,9 +7,10 @@
 
 ## Integrantes do Grupo
 
-Davi Pereira dos Santos: https://github.com/Saigaton
-Eduardo Roberto Lucena: https://github.com/Bigodudys
-Thalisson Costa Mesquita: https://github.com/ThalissonDev01
+1. Davi Pereira dos Santos: https://github.com/Saigaton
+2. Eduardo Roberto Lucena: https://github.com/Bigodudys
+3. Thalisson Costa Mesquita: https://github.com/ThalissonDev01
+
 ---
 
 ## Sobre a atividade
